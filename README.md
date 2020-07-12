@@ -12,15 +12,6 @@ The fare (for a passenger) is calculated by the following formula.
 
 Fare = initial fare + ( distance – 1 ) * 2 
 
-The following table depicts the distance between station 1 and any given station. Note that the initial fare, which is charged for the First Kilo meter is Rs. 7.00.  
-
-Starting station	Stopping station	Distance (Km)
-1                     	2	              2
-1	                      3             	5
-1	                      4	              9
-1                     	5	              15
- 
- 
 Important hint: 
 
 You may plan to develop this program into several stages. For example, in stage 0, use top-down modular decomposition and/or step-wise refinement discussed during lectures for the design along with flaw charts and pseudocode to explain the algorithms. You may also design the appropriate data structures (arrays, records, array of records, etc.) to hold data that are required for the program.
