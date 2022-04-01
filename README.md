@@ -1,4 +1,7 @@
-# bus-ticket-machine-program-in-c
+# Bus Ticket Machine Program in C Language
+
+## 1st Year 1st Semester Project for learning Basic Programming Principles
+
 This is a program that simulates a “Ticket Machine”. In this program, you are expected to simulate a ticket machine program (using C language) that is capable of generating a ticket for a given journey. 
 The ticket shall print the following information with suitable formatting.
 •	Journey starting station
