@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(void)
-{
+int main(void) {
     //Loop the entire code one time to get back to the main menu
     while (1) {
 
@@ -33,12 +32,11 @@ int main(void)
         printf("\n	2.View the distance table and Fares");
         printf("\n	0.Exit");
         printf("\n\n	Enter Your Choice: ");
-        scanf("%d",&userSelection);
+        scanf("%d", &userSelection);
         //Selection-Print the Ticket
-        if (userSelection==1)
-        {
+        if (userSelection == 1) {
             //Execute a loop until user decide to exit
-            while(nextCustomer != 'E'){
+            while (nextCustomer != 'E') {
 
                 //User inputs
                 printf("\n\n   	-- Ticket Number - %d --", customerCount);
@@ -54,8 +52,8 @@ int main(void)
                 distance = (distanceArray[endStation - 1] - distanceArray[startStation - 1]);
 
                 //To get rid of minus distnces
-                if (distance<0){
-                    distance = -1*(distanceArray[endStation - 1] - distanceArray[startStation - 1]);
+                if (distance < 0) {
+                    distance = -1 * (distanceArray[endStation - 1] - distanceArray[startStation - 1]);
                 }
                 farePer = (initialFare + ((distance - 1) * farePerKM));
                 totalFare = (farePer * passengerCount);
@@ -83,7 +81,7 @@ int main(void)
 
             //Displaying the report
             printf("\n\n-----------------REPORT-------------------\n");
-            printf("  Total Number of Customers  : %d\n", customerCount-1);
+            printf("  Total Number of Customers  : %d\n", customerCount - 1);
             printf("  Total Passengers travelled : %d\n", totalPassengers);
             printf("  Total Income           	: Rs.%d.00\n", totalIncome);
 
@@ -91,16 +89,17 @@ int main(void)
         }
 
         //Selection-Preview of the distance table and Fares
-        if (userSelection==2)
-        {   	printf("\n-----------Distance Table---------------------\n");
+        if (userSelection == 2) {
+            printf("\n-----------Distance Table---------------------\n");
             printf("    	1 ---> 2  2km\n");
             printf("    	1 ---> 3  5km\n");
             printf("    	1 ---> 4  9km\n");
             printf("    	1 ---> 5  15km\n");
             printf("----------------------------------------------\n");
-            printf("	* Fare per 1st km : Rs.%d.00\n    * Fare per each other km : Rs.%d.00\n", initialFare, farePerKM);
+            printf("	* Fare per 1st km : Rs.%d.00\n    * Fare per each other km : Rs.%d.00\n", initialFare,
+                   farePerKM);
             printf("----------------------------------------------\n\n");
-            while(subMenu != 'B'){
+            while (subMenu != 'B') {
 
                 printf("\n\n	Enter 'B' to Go back : ");
                 scanf(" %c", &subMenu);
@@ -109,8 +108,7 @@ int main(void)
 
         }
         //Selection-Exit from the programme
-        if (userSelection==0)
-        {
+        if (userSelection == 0) {
             printf("\n	Press any key to Exit\n");
             exit(0);
         }
